@@ -53,7 +53,7 @@ import AppHeader from '@/components/AppHeader.vue'
   <!-- <RouterView /> -->
 </template>
 
-<style lang="scss" scoped>
+<style>
 @import '@/assets/base.css';
 header {
   background-color: black;
@@ -65,9 +65,9 @@ header {
 
 .gray-row {
   background-color: gray;
-  & .80 {
+  /* & .80 {
     background-color: #7d7d7d;
-  }
+  } */
 }
 
 .product-design {
