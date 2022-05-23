@@ -2,41 +2,23 @@
 defineProps({
   msg: {
     type: String,
-    required: true
+    // required: true
   }
 })
 </script>
 
 <template>
-  <div class="greetings">
-    AARON WILSON
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      25+ years designing and building exciting and intuitive user centric web solutions.
-    </h3>
+  <div class="header flex-row">
+    <div class="flex-child">AARON WILSON</div>
+     <div class="flex-child">{{ msg }}</div>
   </div>
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
+.header {
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    padding:10px;
 }
 </style>

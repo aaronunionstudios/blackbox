@@ -1,12 +1,10 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
 </script>
 
 <template>
   <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-
     <div class="wrapper">
       <AppHeader msg="Product Design, UXUI, Frontend Development" />
       <!-- <nav>
@@ -15,104 +13,73 @@ import AppHeader from '@/components/AppHeader.vue'
       </nav> -->
     </div>
   </header>
+  <main>
+    <section>
+      <div class="wrapper">
+        <div class="marquee flex-row">
+          <div class="flex-child">
+            <h1 class="bold">Aaron Wilson</h1>
+            <h2>Product Design,<br>
+              UXUI,<br>
+              Frontend Development</h2>
+            <h3>25+ years designing and building exciting and intuitive user centric web solutions.</h3>
+          </div>
+          <div class="flex-child">Graphic Area</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="gray-row 80">
+        <div class="product-design flex-row wrapper">
+          <div class="flex-child">Product Design</div>
+          <div class="flex-child">Graphic Area</div>
+        </div>
+      </div>
+      <div class="gray-row 60">
+        <div class="uiux-design flex-row wrapper">
+          <div class="flex-child">UI/UX</div>
+          <div class="flex-child">Graphic Area</div>
+        </div>
+      </div>
+      <div class="gray-row 40">
+        <div class="fe-development flex-row wrapper">
+          <div class="flex-child">Frontend Dev</div>
+          <div class="flex-child">Graphic Area</div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <RouterView />
+  <!-- <RouterView /> -->
 </template>
 
-<style>
+<style lang="scss" scoped>
 @import '@/assets/base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  background-color: black;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.marquee {
+  background-color: white;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+.gray-row {
+  background-color: gray;
+  & .80 {
+    background-color: #7d7d7d;
   }
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.product-design {
+  background-color: gray;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.uiux-design {
+  background-color: gray;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.fe-development {
+  background-color: gray;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
