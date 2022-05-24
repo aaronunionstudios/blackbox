@@ -18,7 +18,7 @@ import AppHeader from '@/components/AppHeader.vue'
       <div class="wrapper">
         <div class="marquee flex-row">
           <div class="flex-child">
-            <h1 class="bold">Aaron Wilson</h1>
+            <h1 class="bold">Aaron Wilson 2</h1>
             <h2>Product Design,<br>
               UXUI,<br>
               Frontend Development</h2>
@@ -29,7 +29,7 @@ import AppHeader from '@/components/AppHeader.vue'
       </div>
     </section>
     <section>
-      <div class="gray-row 80">
+      <div class="gray-row eighty">
         <div class="product-design flex-row wrapper">
           <div class="flex-child">Product Design</div>
           <div class="flex-child">Graphic Area</div>
@@ -51,9 +51,9 @@ import AppHeader from '@/components/AppHeader.vue'
   </main>
 
   <!-- <RouterView /> -->
-</template>
+</template> 
 
-<style>
+<style lang="scss" scoped>
 @import '@/assets/base.css';
 header {
   background-color: black;
@@ -64,14 +64,15 @@ header {
 }
 
 .gray-row {
-  background-color: gray;
-  /* & .80 {
-    background-color: #7d7d7d;
-  } */
+  background-color: red;
+  &.eighty {
+    background-color: green;
+  }
+  
 }
 
 .product-design {
-  background-color: gray;
+  // background-color: gray;
 }
 
 .uiux-design {
@@ -81,5 +82,4 @@ header {
 .fe-development {
   background-color: gray;
 }
-
 </style>
