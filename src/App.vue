@@ -79,16 +79,32 @@ Manage team of Front End Designers and Developers to craft solutions for new fea
 </template> 
 
 <style lang="scss" scoped>
-@import '@/assets/base.css';
+@import '@/assets/normalize.scss';
+@import '@/assets/base.scss';
+
 header, footer {
   background-color: black;
 }
 footer {
   color: white;
 }
-
+.work-experience {
+  padding: 40px 0;
+}
 .marquee {
   background-color: white;
+  h1 {
+    font-size:4rem;
+    padding: 20px 0;
+  }
+  h2 {
+    font-size: 2.8rem;
+    padding: 20px 0;
+  }
+  h3 {
+    font-size: 1.8rem;
+    padding: 20px 0;
+  }
 }
 
 .gray-row {
@@ -110,7 +126,7 @@ footer {
 .uiux-design,
 .fe-development
  {
-  padding: 20px;
+  padding: 40px 0px;
 }
 
 </style>
