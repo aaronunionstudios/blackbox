@@ -35,28 +35,56 @@ import AppHeader from '@/components/AppHeader.vue'
           <div class="flex-child">Graphic Area</div>
         </div>
       </div>
-      <div class="gray-row 60">
+      <div class="gray-row sixty">
         <div class="uiux-design flex-row wrapper">
           <div class="flex-child">UI/UX</div>
           <div class="flex-child">Graphic Area</div>
         </div>
       </div>
-      <div class="gray-row 40">
+      <div class="gray-row forty">
         <div class="fe-development flex-row wrapper">
           <div class="flex-child">Frontend Dev</div>
           <div class="flex-child">Graphic Area</div>
         </div>
       </div>
     </section>
+    <section>
+      <div class="work-experience">
+        <div class="wrapper">
+          <div class="arrow-left"></div>
+          <div class="content-area">
+
+February 2017 - Present
+CastleBranch
+
+Location: Wilmington, NC
+
+Position: UI/UX Manager
+
+Manage team of Front End Designers and Developers to craft solutions for new features and functionality within the suite of CastleBrach product offerings, with a focus on usability and user flow. Develop new functionality and features within a Laravel stack using KendoUI, Vue.js, Vanilla Javascript, SASS and HTML. Work directly with Product Management to review business requirements and create functional requirements, as well as wireframes, mockups and clickable prototypes. Conduct key stakeholder meetings to review prototypes and present solutions for approval. Work directly with leadership to construct new SDLC process and implement within the engineering department. Interact with Quality Assurance department to review test plans and to help with feature testing. Manage all Front End development projects with emphasis on delivery dates, update leadership team on deliverables and the projects status.
+
+          </div>
+          <div class="arrow-right"></div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer>
+    <div class="wrapper">
+      This is the footer
+    </div>
+  </footer>
 
   <!-- <RouterView /> -->
 </template> 
 
 <style lang="scss" scoped>
 @import '@/assets/base.css';
-header {
+header, footer {
   background-color: black;
+}
+footer {
+  color: white;
 }
 
 .marquee {
@@ -64,22 +92,25 @@ header {
 }
 
 .gray-row {
-  background-color: red;
+  font-size: 2rem;
+  color: white;
   &.eighty {
     background-color: green;
+  }
+  &.sixty {
+    background-color: blue;
+  }
+  &.forty {
+    background-color: orange;
   }
   
 }
 
-.product-design {
-  // background-color: gray;
+.product-design,
+.uiux-design,
+.fe-development
+ {
+  padding: 20px;
 }
 
-.uiux-design {
-  background-color: gray;
-}
-
-.fe-development {
-  background-color: gray;
-}
 </style>
