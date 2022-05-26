@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="header flex-row">
-    <div class="flex-child">AARON WILSON</div>
+    <div class="flex-child">AW</div>
      <div class="flex-child">{{ msg }}</div>
   </div>
 </template>
