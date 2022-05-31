@@ -1,16 +1,10 @@
-<script setup>
-// import { RouterLink, RouterView } from 'vue-router'
-import AppHeader from '@/components/AppHeader.vue'
-</script>
-
 <template>
   <header>
     <div class="wrapper">
-      <AppHeader msg="Product Design, UXUI, Frontend Development" />
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
+    <div class="header flex-row">
+      <div class="flex-child">AW</div>
+      <div class="flex-child">Product Design, UXUI, Frontend Development</div>
+    </div>
     </div>
   </header>
   <main>
