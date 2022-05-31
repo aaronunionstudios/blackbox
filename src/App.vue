@@ -12,7 +12,7 @@
       <div class="wrapper">
         <div class="marquee flex-row">
           <div class="flex-child">
-            <h1 class="bold">Aaron Wilson</h1>
+            <h1 class="bold">AARON WILSON</h1>
             <h2>Product Design,<br>
               UXUI,<br>
               Frontend Development</h2>
@@ -88,16 +88,22 @@ footer {
 .marquee {
   background-color: white;
   h1 {
-    font-size:4rem;
-    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:6rem;
+    padding:  20px 0 0 0;
+    margin:0;
+    font-weight: 800;
+    line-height:6rem;
   }
   h2 {
     font-size: 2.2rem;
-    padding: 20px 0;
+    padding: 10px 0 0 0;
+    margin:0;
   }
   h3 {
     font-size: 1.6rem;
     padding: 20px 0;
+    margin:0;
   }
 }
 
