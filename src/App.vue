@@ -48,13 +48,14 @@
           <div class="arrow-left"></div>
           <div class="content-area">
 
-<div class="work-date">February 2017 - Present</div>
+<!-- <div class="work-date">February 2017 - Present</div>
 <div class="work-name">CastleBranch</div>
 <div class="work-location">Wilmington, NC</div>
 <div class="work-position">UI/UX Manager</div>
 <div class="work-description">
   Manage team of Front End Designers and Developers to craft solutions for new features and functionality within the suite of CastleBrach product offerings, with a focus on usability and user flow. Develop new functionality and features within a Laravel stack using KendoUI, Vue.js, Vanilla Javascript, SASS and HTML. Work directly with Product Management to review business requirements and create functional requirements, as well as wireframes, mockups and clickable prototypes. Conduct key stakeholder meetings to review prototypes and present solutions for approval. Work directly with leadership to construct new SDLC process and implement within the engineering department. Interact with Quality Assurance department to review test plans and to help with feature testing. Manage all Front End development projects with emphasis on delivery dates, update leadership team on deliverables and the projects status.
-</div>
+</div> -->
+<SlideShow/>
 
           </div>
           <div class="arrow-right"></div>
@@ -130,3 +131,13 @@ footer {
 }
 
 </style>
+<script>
+import SlideShow from './components/SlideShow.vue';
+
+export default {
+  components: {
+    SlideShow
+  }
+}
+</script>
+
