@@ -2,8 +2,7 @@
 export default {
     data() {
         return {
-            slideIndex: 1,
-            showSlides: 0
+            slideIndex: 1
         }
     },
     computed: {
@@ -15,25 +14,26 @@ export default {
             console.log('this worked:',myIndex);
         },
         showSlides (n) {
+            console.log('this worked 2:',n);
             let i;
             let slides = document.getElementsByClassName("mySlides");
             let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
+            if (n > slides.length) { this.slideIndex = 1 }
+            if (n < 1) { this.slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+            slides[this.slideIndex - 1].style.display = "block";
+            dots[this.slideIndex - 1].className += " active";
         },
         plusSlides (n) {
             console.log('fire', n);
-            this.showSLides(n)
-            // let myAdvance = this.slideIndex += n
-            // this.showSlides(myAdvance);
+            this.testMyTest(n)
+            let myAdvance = this.slideIndex += n
+            this.showSlides(myAdvance);
         },
         currentSlide (n) {
              this.showSlides(this.slideIndex = n);
