@@ -101,19 +101,60 @@ export default {
         <div class="mySlides fade">
             
             <!-- <img src="img3.jpg" style="width:100%"> -->
-            <div class="work-date">October 2014 - October 2015</div>
-            <div class="work-name">Jackson National Life Distributers</div>
-            <div class="work-location">Location: Denver, CO</div>
-            <div class="work-position">Position: Senior Web Designer (UI/UX) - Ecommerce</div>
+            <div class="work-date">September 2012 - October 2014</div>
+            <div class="work-name">Creative Services LLC.</div>
+            <div class="work-location">Location: Charlotte, NC</div>
+            <div class="work-position">Position: Interactive Director</div>
             <div class="work-description">
-                Use HTML5, CSS3, AJAX, Javascript and Jquery to develop cross department web projects for a variety of
-                business sponsors. Work with Marketing and Creative departments to wireframe, mockup and implement new
-                functionality and promotions across all corporate websites. Write and review requirements documentation
-                to produce qualified estimates on new projects. Lead training and status meetings, working with multiple
-                departments, in multiple locations, across the organization. Create process and procedure documentation
-                for content managers with emphasis on reducing roadblocks and rework. Create and manage inhouse
-                workflows to ensure all projects meet deadlines and expectations. Work with Compliance department to
-                ensure web materials are designed and developed with limited risk and meet FINRA guidelines.</div>
+                Use HTML5, CSS3, AJAX, Jquery and PHP to develop custom website solutions for national sales network. Conduct client meetings to discuss frontend and backend functionality with emphasis on useability. Use XHTML, MySQL and PHP to develop dynamic Ecommerce websites that drive sales. Develop and maintain custom WordPress development framework, with emphasis on browser and device compatibility. Oversee design concepting to ensure the end results match customer expectations. Create custom jQuery and AJAX web applications to deliver a streamlined user experience. Develop custom PHP and MySQL scripts for custom database functionality. Manage daily work schedule and oversee programming department with emphasis on deadlines. Conduct weekly programming department meetings to leverage team assets for complicated buildouts. Create custom tutorial and training materials for end users and manage client/sales training. Manage hosting department with emphasis on website/email security, software updates and new website launches. Work with server team to trouble shoot problematic websites, broken functionality and hacked/malicious website issues.</div>
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            
+            <!-- <img src="img3.jpg" style="width:100%"> -->
+            <div class="work-date">January 2011 - September 2012</div>
+            <div class="work-name">Union Studios LLC.</div>
+            <div class="work-location">Location: Marshville, NC</div>
+            <div class="work-position">Position: Creative Director/Interactive Director</div>
+            <div class="work-description">
+                Develop custom website solutions on a variety of CMS frameworks. Use HTML, CSS, Jquery and PHP to create WordPress Plugins and Themes for custom funcionality with emphasis on useablility. Run client meetings to discuss website goals, sitemaps and review interactive proofs. Create and deliver HTML email newsletters, marketing campaigns and announements, monitor delivery results and create reports for marketing review. Incorporate Google Analytics and Webmaster Tools into websites, add blog functionality into existing websites and develop blog campaigns to boost SEO rankings.</div>
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            
+            <!-- <img src="img3.jpg" style="width:100%"> -->
+            <div class="work-date">September 2008 - January 2011</div>
+            <div class="work-name">Affinity 4, Inc. and Beliefnet.com</div>
+            <div class="work-location">Location: Norfolk VA</div>
+            <div class="work-position">Position: Senior Graphic/Web Designer</div>
+            <div class="work-description">
+                Use HTML, CSS, PHP and JavaScript to build new product ordering website for NPO business unit. Build custom landing pages in HTML and CSS for business partners. Design and develop dynamic PHP web application to dynamically generate marketing materials. Helped coordinate BN Media’s acquisition of BELIEFNET.com, website with over 3 million monthly unique visitors. Manage and maintain corporate websites with updated content and new marketing incentives. Create HTML email newsletters and marketing incentives. Develop HTML interactive sales material pages for new product launches and promotional sales. Developed custom Social Media landing pages and tied into exisiting Social Media platforms.</div>
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            
+            <!-- <img src="img3.jpg" style="width:100%"> -->
+            <div class="work-date">September 2004 - September 2008</div>
+            <div class="work-name">PlayPower, Inc.</div>
+            <div class="work-location">Location: Huntersville, NC</div>
+            <div class="work-position">Position: Graphic/Web Designer</div>
+            <div class="work-description">
+                Use HTML and CSS to rebrand 5 corporate websites and buildout in a CMS framework. Develop animated banner ads for product promotion through website ad campaigns. Work with sales force to develop PHP and MySQL password protected online marketing material database. Develop monthly e-newsletter in HTML and CSS for delivery to customer email list. Manage in-house hosted websites on Windows IIS Server. Develop custom HTML website landing pages for tracking marketing advertising efforts.</div>
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            
+            <!-- <img src="img3.jpg" style="width:100%"> -->
+            <div class="work-date">September 1997 - October 2003</div>
+            <div class="work-name">ACI Design Inc.</div>
+            <div class="work-location">Location: Charlotte, NC</div>
+            <div class="work-position">Position: Exhibit Designer</div>
+            <div class="work-description">
+                Work with sales staff and clients to create successful tradeshow strategies. Design and develop tradeshow exhibits with emphasis toward goals and budgets. Print and prepare large format inkjet prints for displays. Train and manage production artists. Install and manage tradeshow exhibit installations.</div>
             <div class="text">Caption Three</div>
         </div>
 
@@ -129,6 +170,9 @@ export default {
         <span class="dot" @click="currentSlide(2)"></span>
         <span class="dot" @click="currentSlide(3)"></span>
         <span class="dot" @click="currentSlide(4)"></span>
+        <span class="dot" @click="currentSlide(5)"></span>
+        <span class="dot" @click="currentSlide(6)"></span>
+        <span class="dot" @click="currentSlide(7)"></span>
         <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
     </div>
 </template>
