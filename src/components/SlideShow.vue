@@ -7,6 +7,7 @@ export default {
     },
     methods: {
         showSlides(n) {
+            console.log('timer');
             let i;
             let slides = document.getElementsByClassName("mySlides");
             let dots = document.getElementsByClassName("dot");
@@ -27,7 +28,11 @@ export default {
         },
         currentSlide(n) {
             this.showSlides(this.slideIndex = n);
-        },
+        }
+        
+    },
+    mounted() {
+        // setTimeout(this.plusSlides, 3000);
     }
 }
 </script>
@@ -173,6 +178,7 @@ export default {
         <span class="dot" @click="currentSlide(5)"></span>
         <span class="dot" @click="currentSlide(6)"></span>
         <span class="dot" @click="currentSlide(7)"></span>
+        <span class="dot" @click="currentSlide(8)"></span>
         <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
     </div>
 </template>
