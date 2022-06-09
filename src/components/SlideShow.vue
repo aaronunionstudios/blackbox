@@ -178,6 +178,29 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.work-date {
+    font-size:0.8rem;
+}
+.work-name {
+    font-size:1.4rem;
+    font-weight:bold;
+}
+.work-location {
+    font-size:0.9rem;
+}
+.work-position {
+    font-size:1rem;
+    font-style:italic;
+    padding-bottom: 10px;
+    font-weight:bold;
+}
+.work-description {
+    font-size:1rem;
+}
+.slideshow-container {
+    padding: 0 20px;
+}
+
 * {
     box-sizing: border-box
 }
